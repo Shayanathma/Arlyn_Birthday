@@ -1,0 +1,54 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #fff0f6; /* Soft pink */
+}
+
+h2 {
+    color: #d63384;
+}
+
+/* Puzzle container - Keeping 4:3 aspect ratio */
+#puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 645px;  /* Slightly reduced to match adjustments */
+    height: 485px;
+    margin: 20px auto;
+    gap: 2px; /* Reduced gap */
+    background-color: white;
+    padding: 10px; /* Expands white background slightly */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.5);
+    position: relative;
+}
+
+/* Puzzle pieces */
+.puzzle-piece {
+    width: 157px; /* Adjusted for reduced gap */
+    height: 117px; /* Adjusted for reduced gap */
+    background-size: 640px 480px;
+    background-repeat: no-repeat;
+    cursor: grab;
+    border: 1px solid #ff69b4; /* Thin border */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #ff69b4;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #d63384;
+}

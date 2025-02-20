@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Gift!</title>
+    <link rel="stylesheet" href="gift.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Choose Your Gift 🎁</h2>
+        <div class="gift-options">
+            <button onclick="showGift(1)">Gift 1</button>
+            <button onclick="showGift(2)">Gift 2</button>
+            <button onclick="showGift(3)">Gift 3</button>
+        </div>
+        <p id="gift-message"></p>
+    </div>
+
+    <script>
+        function showGift(giftNumber) {
+            let message;
+            if (giftNumber === 1) {
+                message = "This website is Gift 1! 🎁✨";
+            } else {
+                message = `Here is Gift ${giftNumber}! 🎉`;
+            }
+            document.getElementById("gift-message").innerText = message;
+        }
+    </script>
+</body>
+</html>

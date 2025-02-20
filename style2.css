@@ -1,0 +1,97 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f0; /* Soft pink background */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: #ff6699; /* Cute pink text */
+}
+
+/* Cute Message Box */
+.message-box {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 680px; /* Same width as image containers */
+    margin: 20px auto;
+    box-shadow: 4px 4px 10px rgb(255, 182, 193); /* Soft pink shadow */
+    border: 2px solid #ffb6c1; /* Light pink border */
+    color: #ff6699; /* Matching pink text */
+}
+
+/* Image grid container */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Image container */
+.image-container {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgb(255, 182, 193); /* Soft pink shadow */
+    border: 2px solid #ffb6c1;
+    width: 320px; /* Same width as message box */
+    text-align: center;
+    color: #ff6699; /* Matching pink text */
+}
+
+/* Image descriptions */
+.image-container p {
+    font-size: 16px;
+    color: #ff6699; /* Matching pink text */
+    margin-bottom: 10px;
+}
+
+/* Images */
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Videos */
+.image-container video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .image-container {
+        width: 90%;
+    }
+
+    .message-box {
+        width: 90%;
+    }
+}
+
+.puzzle-button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.puzzle-button {
+    display: inline-block;
+    background-color: #ff6689; /* Cute pink */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 8px rgba(255, 145, 164, 0.5); /* Soft pink shadow */
+    transition: all 0.3s ease-in-out;
+}
+
+.puzzle-button:hover {
+    background-color: #ff3385ba; /* Slightly darker pink */
+    box-shadow: 5px 5px 12px rgba(255, 107, 137, 0.905);
+    transform: scale(1.05);
+}
+

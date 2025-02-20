@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops! Try Again</title>
+    <link rel="stylesheet" href="guess.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sorry bro! Try Again</h2>
+        <img src="images/cat-crying-cat.gif" alt="Cat GIF">
+        <button id="retry-button">Try Again</button>
+    </div>
+
+    <script>
+        // Get the failed question number from the URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const questionNumber = urlParams.get('q');
+
+        // If questionNumber is null or undefined, go to Question 1 as fallback
+        document.getElementById("retry-button").onclick = function() {
+            if (questionNumber) {
+                window.location.href = `question${questionNumber}.html`;
+            } else {
+                window.location.href = "question1.html";
+            }
+        };
+    </script>
+</body>
+</html>

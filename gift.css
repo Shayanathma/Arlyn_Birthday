@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff0f5;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+    padding: 20px;
+    background: white;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #d63384;
+}
+
+.gift-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gift-options button {
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(255, 105, 180, 0.5);
+    transition: 0.3s;
+}
+
+.gift-options button:hover {
+    background-color: #d63384;
+}
+
+#gift-message {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d63384;
+}

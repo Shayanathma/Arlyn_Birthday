@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday 🎉</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0"></script>
+<script>
+    function launchConfetti() {
+        var duration = 3 * 1000; // Confetti falls for 5 seconds
+        var end = Date.now() + duration;
+
+        (function frame() {
+            confetti({
+                particleCount: 20, // Number of confetti particles at a time
+                startVelocity: 20, // Speed of falling
+                spread: 0, // No angular spread (falls straight down)
+                gravity: 2, // Controls the falling speed
+                ticks: 200, // How long each piece lasts
+                origin: { x: Math.random(), y: 0 }, // Starts from a random horizontal position at the top
+            });
+
+            if (Date.now() < end) {
+                requestAnimationFrame(frame);
+            }
+        }());
+    }
+
+    // Start confetti when the page loads
+    window.onload = launchConfetti;
+</script>
+
+    <div class="container">
+        <h1>HAPPIEST BIRTHDAY ARLYN MENDONCA!!!</h1>
+        <img src= "images/Arlyn 1.JPG" height="600" >
+        <a href="gallery.html" class="btn">Here's a little something i've made<3</a>
+    </div>
+</body>
+</html>
